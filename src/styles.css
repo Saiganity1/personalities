@@ -76,10 +76,13 @@ body {
 }
 
 .card-photo {
-  width: 160px;
-  height: 180px;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
   object-fit: cover;
-  margin-bottom: 12px;
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 4px;
 }
 
 .card-name {

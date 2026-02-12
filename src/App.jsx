@@ -7,8 +7,7 @@ const personalities = [
 		name: 'Andre Iguodala',
 		title: 'NBA FINALS MVP',
 		subtitle: '2015 NBA Finals – Golden State Warriors',
-		photoUrl:
-			'https://via.placeholder.com/160x180.png?text=2015+-+Iguodala',
+		photoUrl: '/iguodala-mvp.jpg',
 		description:
 			'Andre Iguodala came off the bench to change the 2015 series, guarding LeBron James and providing timely scoring. His move into the starting lineup helped swing the momentum to Golden State, earning him the Finals MVP as the Warriors won their first title of the Steph Curry era.',
 	},
