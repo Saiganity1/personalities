@@ -10,6 +10,7 @@ import {
 	Container,
 	Divider,
 	IconButton,
+	Paper,
 	Stack,
 	Typography,
 } from '@mui/material';
@@ -125,6 +126,11 @@ function App() {
 	const person = personalities[index];
 
 	const heading = 'NBA Finals MVPs (2015–2024)';
+	const identification = {
+		fullName: 'Michael Dave P. SIcat',
+		subject: 'Software Development',
+		section: 'BSIT-3A',
+	};
 
 	const handleNext = () => {
 		setIndex((prev) => (prev + 1) % personalities.length);
@@ -147,6 +153,36 @@ function App() {
 						Showing {person.title} winners • {person.subtitle}
 					</Typography>
 				</Box>
+
+				<Paper variant="outlined" sx={{ p: 2 }}>
+					<Box
+						sx={{
+							display: 'grid',
+							gridTemplateColumns: { xs: '1fr', sm: '160px 1fr' },
+							columnGap: 2,
+							rowGap: 0.5,
+						}}
+					>
+						<Typography variant="body2" color="text.secondary">
+							Full Name
+						</Typography>
+						<Typography variant="body2" sx={{ fontWeight: 600 }}>
+							{identification.fullName}
+						</Typography>
+						<Typography variant="body2" color="text.secondary">
+							Subject
+						</Typography>
+						<Typography variant="body2" sx={{ fontWeight: 600 }}>
+							{identification.subject}
+						</Typography>
+						<Typography variant="body2" color="text.secondary">
+							Section
+						</Typography>
+						<Typography variant="body2" sx={{ fontWeight: 600 }}>
+							{identification.section}
+						</Typography>
+					</Box>
+				</Paper>
 
 				<Card variant="outlined" sx={{ overflow: 'hidden' }}>
 					<CardMedia
